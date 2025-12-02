@@ -29,7 +29,7 @@ singleView: true
       <div class="w-full md:w-1/3 grid grid-cols-2 md:grid-cols-2 grid-rows-2 gap-2 md:gap-3">
         <div class="bg-navy/40 rounded-xl md:rounded-2xl border border-cream/10 flex flex-col items-center justify-center p-3 md:p-4 hover:border-gold/40 transition-colors">
           <div class="flex items-center justify-center w-full h-full">
-            <img src="/assets/Active-Community.svg" alt="Active Community" class="w-full h-full object-contain max-w-[80%] max-h-[80%]">
+            <img src="{{ pathPrefix }}assets/Active-Community.svg" alt="Active Community" class="w-full h-full object-contain max-w-[80%] max-h-[80%]">
           </div>
         </div>
         <div class="bg-navy/40 rounded-xl md:rounded-2xl border border-cream/10 flex flex-col items-center justify-center p-3 md:p-4 hover:border-gold/40 transition-colors">
@@ -42,7 +42,7 @@ singleView: true
         </div>
         <div class="bg-navy/40 rounded-xl md:rounded-2xl border border-cream/10 flex flex-col items-center justify-center p-3 md:p-4 hover:border-gold/40 transition-colors">
           <div class="flex items-center justify-center w-full h-full">
-            <img src="/assets/Events_Regularly.svg" alt="Events Regularly Image" class="w-full h-full object-contain max-w-[80%] max-h-[80%]">
+            <img src="{{ pathPrefix }}assets/Events_Regularly.svg" alt="Events Regularly Image" class="w-full h-full object-contain max-w-[80%] max-h-[80%]">
           </div>
         </div>
       </div>
@@ -74,7 +74,7 @@ singleView: true
       </a>
 
       {# Card 3: Upcoming Events #}
-      <a href="/events" class="group bg-navy/40 rounded-xl md:rounded-2xl border border-cream/10 p-4 md:p-6 flex flex-col justify-between hover:border-gold/40 transition-all">
+      <a href="{{ pathPrefix }}events" class="group bg-navy/40 rounded-xl md:rounded-2xl border border-cream/10 p-4 md:p-6 flex flex-col justify-between hover:border-gold/40 transition-all">
         <div class="text-gold">
           <svg class="w-10 h-10 md:w-12 md:h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
         </div>

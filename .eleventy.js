@@ -16,6 +16,9 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  // Add global data for pathPrefix
+  eleventyConfig.addGlobalData("pathPrefix", process.env.PATH_PREFIX || "/");
+
   return {
     pathPrefix: process.env.PATH_PREFIX || "/",
     dir: {
