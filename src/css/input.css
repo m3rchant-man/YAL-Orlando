@@ -123,22 +123,9 @@ input:focus, select:focus, textarea:focus {
   min-height: 200px;
 }
 
-/* Community card icons - responsive sizing */
+/* Community card icons - simply 1/8th of the container width */
 .community-icon {
-  width: clamp(48px, 12.5vw, 120px);
-  height: clamp(48px, 12.5vw, 120px);
-}
-
-@media (min-width: 768px) {
-  .community-icon {
-    width: clamp(60px, 8vw, 100px);
-    height: clamp(60px, 8vw, 100px);
-  }
-}
-
-@media (min-width: 1024px) {
-  .community-icon {
-    width: clamp(70px, 6vw, 110px);
-    height: clamp(70px, 6vw, 110px);
-  }
+  width: 12.5%;
+  height: auto;
+  aspect-ratio: 1/1;
 }
