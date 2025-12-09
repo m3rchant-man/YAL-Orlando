@@ -1,0 +1,22 @@
+---
+layout: base.njk
+title: Page Not Found
+description: The page you’re looking for doesn’t exist.
+permalink: 404.html
+singleView: true
+---
+
+<div class="min-h-screen flex items-center justify-center px-4 pt-16 md:pt-20">
+  <div class="max-w-xl w-full bg-navy/40 border border-cream/10 rounded-2xl p-6 md:p-10 text-center shadow-lg shadow-midnight/40">
+    <p class="font-display text-sm uppercase tracking-[0.2em] text-cream/50 mb-2">Error 404</p>
+    <h1 class="font-display text-4xl md:text-5xl text-cream mb-4">Page not found</h1>
+    <p class="font-body text-cream/60 mb-6">
+      We couldn’t find the page you requested. Check the URL or head back to the homepage.
+    </p>
+    <div class="flex justify-center">
+      <a href="{{ pathPrefix }}" class="btn-gold px-7 py-4 text-lg">
+        Return home
+      </a>
+    </div>
+  </div>
+</div>

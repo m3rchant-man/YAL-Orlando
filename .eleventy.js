@@ -2,7 +2,6 @@ module.exports = function(eleventyConfig) {
   // Copy static assets
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("src/assets");
-  eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/js");
   
   // Watch CSS files for changes
@@ -17,11 +16,20 @@ module.exports = function(eleventyConfig) {
     });
   });
 
-  // Add global data for pathPrefix
-  eleventyConfig.addGlobalData("pathPrefix", process.env.PATH_PREFIX || "/");
+  // Add global data for pathPrefix (normalize for absolute URLs)
+  const normalizePathPrefix = (prefix) => {
+    if (!prefix) return "/";
+    let normalized = prefix;
+    if (!normalized.startsWith("/")) normalized = `/${normalized}`;
+    if (!normalized.endsWith("/")) normalized = `${normalized}/`;
+    return normalized;
+  };
+
+  const pathPrefix = normalizePathPrefix(process.env.PATH_PREFIX);
+  eleventyConfig.addGlobalData("pathPrefix", pathPrefix);
 
   return {
-    pathPrefix: process.env.PATH_PREFIX || "/",
+    pathPrefix,
     dir: {
       input: "src",
       output: "_site",
