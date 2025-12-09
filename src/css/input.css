@@ -41,6 +41,21 @@
   .section-title {
     @apply font-display text-6xl md:text-8xl uppercase tracking-wide;
   }
+
+  .bento-card {
+    @apply w-full rounded-3xl border border-cream/10 bg-midnight/80 p-6 md:p-8
+           shadow-xl shadow-midnight/40 backdrop-blur transition duration-300 transform-gpu
+           hover:-translate-y-1 hover:shadow-gold/10 hover:border-gold/30;
+  }
+
+  .bento-label {
+    @apply inline-flex items-center gap-2 px-3 py-1 text-[0.72rem] font-semibold uppercase tracking-[0.12em]
+           rounded-full bg-cream/10 text-cream/80 border border-cream/10;
+  }
+
+  .bento-pill {
+    @apply inline-flex items-center gap-2 px-3 py-1 text-xs font-medium text-cream/80 bg-cream/5 border border-cream/10 rounded-full;
+  }
 }
 
 /* Starfield background */
