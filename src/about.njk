@@ -5,28 +5,33 @@ description: Learn about our YAL Central Florida chapter.
 singleView: true
 ---
 
-<div class="min-h-screen flex flex-col">
-  <div class="flex-1 flex flex-col items-center justify-center p-4">
+<div class="min-h-screen flex flex-col pt-20">
+  <div class="flex-1 flex flex-col items-center justify-center p-4 md:p-8">
     
     {# Eagle Icon #}
-    <div class="mb-6">
+    <div class="mb-8">
       <img src="{{ pathPrefix }}assets/favicons.png" alt="YAL Eagle" class="w-24 h-24 md:w-32 md:h-32 object-contain">
     </div>
 
-    {# Message #}
-    <h1 class="font-display text-4xl md:text-6xl uppercase tracking-wide text-center mb-4">
-      <span class="text-cream">Under</span>
-      <span class="text-gold"> Construction</span>
+    {# Title #}
+    <h1 class="font-display text-4xl md:text-6xl uppercase tracking-wide text-center mb-8">
+      <span class="text-cream">About</span>
+      <span class="text-gold"> Us</span>
     </h1>
     
-    <p class="font-body text-lg text-cream/60 text-center max-w-md mb-8">
-      Check back soon to learn more about our chapter!
-    </p>
+    {# Content #}
+    <div class="max-w-3xl mx-auto">
+      <p class="font-body text-lg md:text-xl text-cream/80 text-center leading-relaxed">
+        We are the largest libertarian activist group in the country with over 900 chapters. We promote discussion and education on a variety of political issues through both traditional as well as creative means on campus, challenging the traditional Right-Left political spectrum as well as our own beliefs through a classical liberal mindset.
+      </p>
+    </div>
 
     {# Back Button #}
-    <a href="{{ pathPrefix }}" class="btn-outline">
-      ← Back to Home
-    </a>
+    <div class="mt-12">
+      <a href="{{ pathPrefix }}" class="btn-outline">
+        ← Back to Home
+      </a>
+    </div>
 
   </div>
 </div>
